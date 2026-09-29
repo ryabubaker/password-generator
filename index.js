@@ -50,8 +50,8 @@ function generatePassword() {
         return;
     }
 
-    if (length <= 0) {
-        alert("Please specify a valid length greater than 0.");
+    if (length < 4 && length > 64) {
+        alert("Please specify a valid length (4 - 64).");
         return;
     }
 
