@@ -22,6 +22,7 @@ function updateLength(value) {
 }
 
 function updateCharacters() {
+    characters = []
     if (includeSymbolsCheckbox.checked ){
         characters.push(...symbols);
     }
