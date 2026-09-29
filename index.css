@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    background-color: #1F2937;
+    color: white;
+    font-family: 'Inter';
+}
+
+.section{
+    margin: 115px  50px;   
+}
+
+h1 {
+  font-family: "Karla", sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  letter-spacing: -2.5%;
+  line-height: 40px;
+  margin: 0;
+}
+
+.green {
+    color: #4ADF86;
+}
+
+.sub {
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #D5D4D8;
+margin: 10px 0 0 0;
+}
+
+.middle {
+    margin-top: 50px;
+}
+
+.gen-pwd{
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 9px 17px 9px 15px;
+    background: #10B981;
+
+    border-radius: 6px;
+    border: none;
+}
+.splitter{
+    border: 1px solid #2F3E53;
+    margin: 35px 0;
+}
+.pwd-section{
+    display: flex;
+    gap: 24px;
+}
+
+.pwd-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 211px;
+    width: max-content;
+    max-width: 100%; 
+
+    box-sizing: border-box; 
+    padding: 8px 20px;
+
+    min-height: 39px;       
+    height: auto;    
+    
+    background: #273549;
+    border-radius: 6px;
+    font-weight: 300;
+    font-size: 16px;
+
+    line-height: 1.4;
+
+    color: #55F991;
+    transition: all 0.3s;
+    margin-bottom: 30px;
+
+    word-break: break-all;  
+    text-align: center;
+}
+
+.pwd-box.copied-state {
+    color: #D1D5DB;
+    font-weight: 400;
+}
+
+.pwd-box:hover{
+    cursor: pointer;
+    background-color: #2F3E53;
+}
+
+.generate-settings-fieldset {
+    color: white;
+    border: 1px solid #2F3E53;
+    border-radius: 6px;
+    padding: 20px;
+    max-width: 450px;
+    
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    row-gap: 15px;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.generate-settings-fieldset legend {
+    font-family: "Karla", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #4ADF86;
+    padding: 0 10px;
+}
+
+.generate-setting-span {
+    font-size: 16px;
+    color: #D5D4D8;
+}
+
+.generate-setting-span input[type="number"] {
+    width: 50px;
+    background: #273549;
+    border: 1px solid #2F3E53;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.generate-setting-span input[type="checkbox"] {
+    accent-color: #10B981; 
+    transform: scale(1.2); 
+    cursor: pointer;
+}

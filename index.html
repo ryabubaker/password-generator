@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="section">
+        <div class="heading">
+            <h1> Generate a<br> <span class="green"> random password</span>
+                <h1>
+                    <p class="sub">Never use an insecure password again.</p>
+        </div>
+        <div class="middle">
+            <button class="gen-pwd" onclick="generatePassword()">Generate passwords</button>
+            <div class="splitter"></div>
+            <div class="pwd-section">
+                <div class="pwd-box" id="pwd-1" onclick="copyPwd(this)"></div>
+                <div class="pwd-box" id="pwd-2" onclick="copyPwd(this)"></div>
+            </div>
+        </div>
+        <fieldset class="generate-settings-fieldset">
+            <legend>Settings</legend>
+            <div class="generate-setting-span">Password Length</div>
+            <div class="generate-setting-span fieldval"><input type="number" id="password-length-input" value="12" onchange="updateLength(this.value)"
+                    min="4" max="64"></div>
+            <div class="generate-setting-span">Allow Symbols</div>
+            <div class="generate-setting-span  fieldval"><input id="include-symbol-checkbox" type="checkbox" checked="checked"></div>
+            <div class="generate-setting-span">Allow Numbers (0-9)</div>
+            <div class="generate-setting-span  fieldval"><input id="include-number-checkbox" type="checkbox" checked="checked"></div>
+            <div class="generate-setting-span">Allow Lowercase (abc)</div>
+            <div class="generate-setting-span fieldval"><input id="include-lowercase-checkbox" type="checkbox" checked="checked"></div>
+            <div class="generate-setting-span">Allow Uppercase (ABC)</div>
+            <div class="generate-setting-span fieldval"><input id="include-uppercase-checkbox" type="checkbox" checked="checked"></div>
+
+        </fieldset>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
