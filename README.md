@@ -1,19 +1,20 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Random Password Generator
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+A clean, dark-themed web application that generates strong, customizable passwords. Built with simple vanilla web technologies.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could go further with one of our advanced courses 🚀
+## Features
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+- **Custom Length:** Generate passwords from 4 to 64 characters long.
+- **Character Toggles:** Choose exactly what to include: Uppercase, Lowercase, Numbers, and Symbols.
+- **Smart Copy System:** Click any password box to copy it to your clipboard. The box securely locks its size and shows a temporary "Copied!" notification.
 
-Happy Coding!
+## File Structure
+
+- `index.html` - The structural markup and settings panel.
+- `index.css` - The dark-theme styling, grid layouts, and hover effects.
+- `index.js` - The password generation logic and clipboard management.
+
+## Setup Instructions
+
+1. Download or clone the files into a single folder.
+2. Open `index.html` in any web browser to run the application instantly. No installations required.
